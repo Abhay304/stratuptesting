@@ -30,7 +30,7 @@ body {
 }
 .header {
   position: relative;
-  background-color: #fff;
+  background-color: #711c53;
   z-index: 3;
   transition: all 0.5s;
 }
@@ -65,7 +65,7 @@ body {
   color: #fff;
   padding: 0 10px;
   font-size: 16px;
-  background-color: rgb(8, 189, 128);
+  background-color: rgb(133 95 156 / 78%);
   width: 80px;
   height: 40px;
   min-height: 40px;
@@ -109,7 +109,7 @@ nav li a {
   letter-spacing: 2px;
   padding: 0 5px;
   display: block;
-  line-height: 60px;
+  line-height: 30px;
   transition: all 0.3s linear;
   margin: 0 20px;
 }
@@ -171,7 +171,7 @@ section:first-child .z-index-wrap {
 /**/
 /* .section-one,.sectionbg{background-image: linear-gradient(to right, #07446a, #003f57, #00373e, #002e24, #07240e);;color: #fff;} */
 .section-one {
-  background: #fcfcfc;
+  background: #711c53;
   color: #fff;
 }
 .flex-banner-block {
@@ -206,7 +206,7 @@ section:first-child .z-index-wrap {
   margin: 0 auto;
   cursor: pointer;
   letter-spacing: 2px;
-  background-color: rgb(8, 189, 128);
+  background-color: rgb(133 95 156 / 78%);
   color: #fff !important;
   height: 50px;
   border-radius: 4px;
@@ -221,7 +221,7 @@ section:first-child .z-index-wrap {
   right: 0;
   bottom: -50%;
   right: -10%;
-  opacity: 0.55;
+  /* opacity: 0.55; */
 }
 
 /****/
@@ -399,4 +399,22 @@ section:first-child .z-index-wrap {
 
 .btn-style-1:hover {
   transform: translate(0px, -2px);
+}
+
+nav li:hover a::after {
+  width: 100%;
+  opacity: 1;
+}
+nav li a::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 0;
+  height: 2px;
+  bottom: -7px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  opacity: 0;
 }
